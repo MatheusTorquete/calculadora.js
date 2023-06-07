@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração global para zerar as margens e paddings e definir a caixa de modelagem como 
+'border-box' */
+
+body {
+    background-color: whitesmoke;
+    padding: 90px 0;
+}
+
+/* Define a cor de fundo do body como 'whitesmoke' e adiciona um preenchimento superior e 
+inferior de 90px */
+
+.calculator {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #FBAB18;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+}
+
+/* Estilos para o elemento com a classe 'calculator', define a largura como 400px, 
+centraliza horizontalmente com 'margin: 0 auto', define a cor de fundo como '#FBAB18', 
+adiciona um preenchimento de 20px, um raio de borda de 5px e uma sombra de caixa */
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font: normal 4rem serif;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* Estilos para o elemento com a classe 'display', 
+define o elemento como um flex container com alinhamento flex-end, define a largura como 100%, 
+a altura como 100px, adiciona uma margem inferior de 20px, um preenchimento de 15px, 
+define a cor de fundo como preto, a cor do texto como branco, define a fonte como 4rem e serif, 
+oculta qualquer conteúdo que exceda a altura definida e define um raio de borda de 5px */
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/* Estilos para o elemento com a classe 'calculator-buttons', 
+define o elemento como um grid container, define quatro colunas de tamanho igual com 'grid-template-columns: 1fr 1fr 1fr 1fr', define um espaçamento de 10px entre as células do grid */
+
+.calculator button {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+/* Estilos para os botões dentro do elemento com a classe 'calculator',
+ define a cor de fundo como preto, a cor do texto como branco, um preenchimento de 20px, um raio de borda de 5px, o tamanho da fonte como 1.5rem, remove a borda ao receber o foco (outline), define o cursor do mouse como ponteiro, e adiciona uma borda de 2px sólida preta */
+
+button:hover {
+    background-color: #FBAB18;
+    color: black;
+}
+
+/* Estilos para o estado hover (quando o cursor está sobre o botão), 
+define a cor de fundo como '#FBAB18' e a cor do texto como preto */
