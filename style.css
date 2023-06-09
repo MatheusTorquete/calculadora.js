@@ -18,7 +18,7 @@ inferior de 90px */
 .calculator {
     width: 400px;
     margin: 0 auto;
-    background-color: #FBAB18;
+    background-color: #fcf9f3;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 15px black;
@@ -65,7 +65,7 @@ define o elemento como um grid container, define quatro colunas de tamanho igual
     font-size: 1.5rem;
     outline: none;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid rgb(241, 234, 234);
 }
 
 /* Estilos para os botões dentro do elemento com a classe 'calculator',
